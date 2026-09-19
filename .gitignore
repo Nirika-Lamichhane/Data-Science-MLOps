@@ -1,0 +1,27 @@
+# Virtual Environment
+.venv/
+
+# Python Cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Data
+data/
+*.csv
+*.parquet
+
+# MLflow Tracking & Artifacts
+mlruns/
+mlartifacts/
+*.db
+mlflow.db
+
+# Evidently AI Reports
+reports/
+*.html
+
+# IDE / OS
+.vscode/
+.DS_Store

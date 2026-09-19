@@ -1,0 +1,25 @@
+[project]
+name = "wk17-assignment"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Nirika Lamichhane", email = "nirikalamichhane12@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "evidently>=0.7.23",
+    "fastapi>=0.141.1",
+    "matplotlib>=3.11.2",
+    "mlflow>=3.16.1",
+    "pandas>=3.0.6",
+    "scikit-learn>=1.9.1",
+    "uvicorn>=0.53.0",
+]
+
+[project.scripts]
+wk17-assignment = "wk17_assignment:main"
+
+[build-system]
+requires = ["uv_build>=0.12.16,<0.13.0"]
+build-backend = "uv_build"

@@ -81,8 +81,12 @@ def main():
     
     # Call save_html on the NEW evaluation object, not the original report
     my_eval.save_html(report_path)
-    
+
     print(f"Evidently report saved locally to {report_path}")
+
+    # 8. Log the report to MLflow
+    mlflow.set_tracking_uri("sqlite:///mlflow.db")
+    mlflow.set_experiment("Telco_Customer_Churn_Experiment")
     
     # 8. Log the report to MLflow
     mlflow.set_experiment("Telco_Customer_Churn_Experiment") 

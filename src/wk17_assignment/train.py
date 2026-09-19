@@ -56,6 +56,10 @@ def main():
         ('imputer', SimpleImputer(strategy='median')),
         ('scaler', StandardScaler())
     ])
+
+    # Tell MLflow to use the database BEFORE setting the experiment
+    mlflow.set_tracking_uri("sqlite:///mlflow.db")
+    mlflow.set_experiment("Telco_Customer_Churn_Experiment")
     
     categorical_transformer = Pipeline(steps=[
         ('imputer', SimpleImputer(strategy='constant', fill_value='missing')),

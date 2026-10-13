@@ -6,6 +6,7 @@
 
 This repository contains an end-to-end Machine Learning Operations (MLOps) pipeline. It satisfies all Track A deliverable requirements, focusing on professional environment management, comprehensive experiment tracking, model registry transitions, and production data drift monitoring.
 
+[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/Nirika-Lamichhane/Data-Science-MLOps)
 ---
 
 ## 📋 Deliverables & Rubric Checklist
